@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .box{
+            display: inline-block;
+            position: absolute;
+            left: 43%;
+        }
+        #con1{
+            font-style: oblique;
+            font-size: 50px;
+            font-weight: 300;
+           
+            
+        }
+        #con2{
+            font-size: medium;
+            font-weight: 100;
+            color: aqua;
+            position:absolute;
+            left: 40px;
+        }
+        .information{
+        
+            display: inline-block;
+            position: absolute;
+            left: 586px;
+            top: 180px;
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 15px;
+            background-color:yellowgreen;
+        }
+        .information input{
+            padding: 2%;
+
+            margin:4%;
+        }
+        .row input{
+            color: rgb(255, 0, 81);
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="box">
+        <div class="container" id="con1">User details</div>
+
+    </nav>
+    <form action="https://formspree.io/f/xayzdlwk" method="post">
+        <!-- <p>required fields are followed by*</p> -->
+        <nav class="information">
+        <div class="col">
+        Name: <input type="text"  name="name" placeholder="Enter your name"  >
+        </div>
+        <div class="col">
+        Contact no: <input type="tel" name="no" placeholder="Enter your no."  >  
+        </div>
+        <div class="col">
+        Email: <input type="email" name="email" placeholder="Enter your email" >    
+        </div>
+        <div>
+        <textarea name=" text" id="" cols="30" rows="10" placeholder=" message"></textarea>
+        </div>
+        <div class="row">
+            <input type="submit"  value="submit now">
+        </div>
+        </nav>
+    </form>
+
+    
+</body>
+</html>
